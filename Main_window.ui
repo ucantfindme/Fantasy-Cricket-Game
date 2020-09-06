@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>835</width>
+    <height>833</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1100</width>
+    <height>1100</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>My Fantasy Cricket Game</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(161, 161, 161);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_6">
+    <item>
+     <widget class="QGroupBox" name="selection">
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(199, 255, 240);
+border-color:rgb(199, 255, 240);
+border-radius:10px;
+border:2px solid black;</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="styleSheet">
+          <string notr="true">font-weight: bold;
+font-size:20px;
+border:0px;</string>
+         </property>
+         <property name="text">
+          <string>Your Selections:</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_5">
+         <property name="styleSheet">
+          <string notr="true">border:0;</string>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QGroupBox" name="groupBox_12">
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <widget class="QLabel" name="label_8">
+               <property name="styleSheet">
+                <string notr="true">font-weight: bold;
+font-size:15px;</string>
+               </property>
+               <property name="text">
+                <string>Batsmen(BAT)</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="noofbat">
+               <property name="styleSheet">
+                <string notr="true">color:blue;font-weight: bold;
+font-size:15px;</string>
+               </property>
+               <property name="text">
+                <string>###</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_11">
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <widget class="QLabel" name="label_6">
+               <property name="styleSheet">
+                <string notr="true">font-weight: bold;
+font-size:15px;</string>
+               </property>
+               <property name="text">
+                <string>Bowler(BWL)</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="noofbwl">
+               <property name="styleSheet">
+                <string notr="true">color:blue;font-weight: bold;
+font-size:15px;</string>
+               </property>
+               <property name="text">
+                <string>###</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_10">
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_7">
+             <item>
+              <widget class="QLabel" name="label_7">
+               <property name="styleSheet">
+                <string notr="true">font-weight: bold;
+font-size:15px;</string>
+               </property>
+               <property name="text">
+                <string>All-Rounder(AR)</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="noofar">
+               <property name="styleSheet">
+                <string notr="true">color:blue;font-weight: bold;
+font-size:15px;</string>
+               </property>
+               <property name="text">
+                <string>###</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_9">
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <item>
+              <widget class="QLabel" name="label_11">
+               <property name="styleSheet">
+                <string notr="true">font-weight: bold;
+font-size:15px;</string>
+               </property>
+               <property name="text">
+                <string>Wicket-Keeper(WK)</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="noofwk">
+               <property name="styleSheet">
+                <string notr="true">color:blue;font-weight: bold;
+font-size:15px;</string>
+               </property>
+               <property name="text">
+                <string>###</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QProgressBar" name="progressBar">
+         <property name="styleSheet">
+          <string notr="true">border:2px solid black;
+border-radius:5px;
+font-size:15px;
+font-weight:bold;
+</string>
+         </property>
+         <property name="maximum">
+          <number>11</number>
+         </property>
+         <property name="value">
+          <number>0</number>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+         </property>
+         <property name="format">
+          <string>%p%</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="styleSheet">
+       <string notr="true">border:0px;</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="styleSheet">
+          <string notr="true">border-color:black;
+width: 500px;
+</string>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QGroupBox" name="groupBox_4">
+            <property name="maximumSize">
+             <size>
+              <width>350</width>
+              <height>600</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">width: px;</string>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <property name="sizeConstraint">
+              <enum>QLayout::SetMaximumSize</enum>
+             </property>
+             <property name="leftMargin">
+              <number>11</number>
+             </property>
+             <property name="rightMargin">
+              <number>11</number>
+             </property>
+             <item>
+              <widget class="QGroupBox" name="groupBox_14">
+               <property name="styleSheet">
+                <string notr="true">background-color:rgb(229, 167, 255);
+border-radius:10px;
+border:2px solid black;</string>
+               </property>
+               <property name="title">
+                <string/>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_9">
+                <item>
+                 <widget class="QLabel" name="label">
+                  <property name="styleSheet">
+                   <string notr="true">font-weight: bold;
+font-size:15px;
+border:0px;</string>
+                  </property>
+                  <property name="text">
+                   <string>Points Available: </string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="pointsAvailable">
+                  <property name="styleSheet">
+                   <string notr="true">color:blue;font-weight: bold;
+font-size:15px;border:0px;</string>
+                  </property>
+                  <property name="text">
+                   <string>###</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_6">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="mouseTracking">
+                <bool>true</bool>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color:rgb(255, 170, 127);
+border-radius:10px;
+border:2px solid black;</string>
+               </property>
+               <property name="title">
+                <string/>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_3">
+                <item>
+                 <widget class="QRadioButton" name="radioBAT">
+                  <property name="enabled">
+                   <bool>true</bool>
+                  </property>
+                  <property name="mouseTracking">
+                   <bool>false</bool>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">font-weight: bold;
+font-size:15px;border:0px;</string>
+                  </property>
+                  <property name="text">
+                   <string>BAT</string>
+                  </property>
+                  <property name="checked">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QRadioButton" name="radioBWL">
+                  <property name="styleSheet">
+                   <string notr="true">font-weight: bold;
+font-size:15px;border:0px;</string>
+                  </property>
+                  <property name="text">
+                   <string>BWL</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QRadioButton" name="radioAR">
+                  <property name="styleSheet">
+                   <string notr="true">font-weight: bold;
+font-size:15px;border:0px;</string>
+                  </property>
+                  <property name="text">
+                   <string>AR</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QRadioButton" name="radioWK">
+                  <property name="whatsThis">
+                   <UInt>0</UInt>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">font-weight: bold;
+font-size:15px;border:0px;</string>
+                  </property>
+                  <property name="text">
+                   <string>WK</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QListWidget" name="AvailablePlayersList">
+               <property name="minimumSize">
+                <size>
+                 <width>200</width>
+                 <height>350</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color:rgb(255, 255, 127);
+border-radius:20px;
+border:2px solid black;</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_15">
+            <property name="styleSheet">
+             <string notr="true">font-weight:bold;font-size:25px;</string>
+            </property>
+            <property name="text">
+             <string>&gt;&gt;</string>
+            </property>
+            <property name="scaledContents">
+             <bool>false</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_7">
+            <property name="maximumSize">
+             <size>
+              <width>350</width>
+              <height>600</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">width: 65px;</string>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <widget class="QGroupBox" name="groupBox_15">
+               <property name="styleSheet">
+                <string notr="true">background-color:rgb(229, 167, 255);
+border-radius:10px;
+border:2px solid black;</string>
+               </property>
+               <property name="title">
+                <string/>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_10">
+                <item>
+                 <widget class="QLabel" name="label_2">
+                  <property name="styleSheet">
+                   <string notr="true">font-weight: bold;
+font-size:15px;border:0px;</string>
+                  </property>
+                  <property name="text">
+                   <string>Points Used: </string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="pointsUsed">
+                  <property name="styleSheet">
+                   <string notr="true">border:0px;color:blue;font-weight: bold;
+font-size:15px;</string>
+                  </property>
+                  <property name="text">
+                   <string>###</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_8">
+               <property name="styleSheet">
+                <string notr="true">background-color:rgb(255, 170, 127);
+border-radius:10px;
+border:2px solid black;</string>
+               </property>
+               <property name="title">
+                <string/>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_4">
+                <item>
+                 <widget class="QRadioButton" name="radioTeamName">
+                  <property name="styleSheet">
+                   <string notr="true">font-weight: bold;
+font-size:15px;border:0px;</string>
+                  </property>
+                  <property name="text">
+                   <string>Team Name</string>
+                  </property>
+                  <property name="checked">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="TeamName">
+                  <property name="styleSheet">
+                   <string notr="true">border:0px;color:blue;font-weight: bold;
+font-size:15px;</string>
+                  </property>
+                  <property name="text">
+                   <string>###</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QListWidget" name="SelectedPlayerList">
+               <property name="minimumSize">
+                <size>
+                 <width>200</width>
+                 <height>350</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>500</width>
+                 <height>750</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color:rgb(255, 255, 127);
+border-radius:20px;
+border:2px solid black;</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_13">
+      <property name="styleSheet">
+       <string notr="true">border:0px;
+</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_11">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="ResetButton">
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(148, 205, 255);
+border-radius:10px;
+border:2px solid black;
+font-weight: bold;
+font-size:20px;
+min-width:100px;</string>
+         </property>
+         <property name="text">
+          <string>Reset</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="SaveButton">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(148, 205, 255);
+border-radius:10px;
+border:2px solid black;
+font-weight: bold;
+font-size:20px;
+min-width:100px;</string>
+         </property>
+         <property name="text">
+          <string>Save</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>835</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuManage_Teams">
+    <property name="title">
+     <string>Manage Teams</string>
+    </property>
+    <addaction name="actionNEW_Team"/>
+    <addaction name="actionOPEN_Team"/>
+    <addaction name="actionSAVE_Team"/>
+    <addaction name="separator"/>
+    <addaction name="actionEVALUATE_Team"/>
+   </widget>
+   <addaction name="menuManage_Teams"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNEW_Team">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>NEW Team</string>
+   </property>
+  </action>
+  <action name="actionOPEN_Team">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>OPEN Team</string>
+   </property>
+  </action>
+  <action name="actionSAVE_Team">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>SAVE Team</string>
+   </property>
+  </action>
+  <action name="actionEVALUATE_Team">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>EVALUATE Team</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
